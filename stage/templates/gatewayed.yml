@@ -1,0 +1,1 @@
+ansible_ssh_common_args: '-o ProxyCommand="ssh -W %h:%p -i ssh_secure/proxy -q ${user}@${proxy_external_ipv4_address}"'
