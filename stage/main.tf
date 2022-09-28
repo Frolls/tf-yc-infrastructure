@@ -33,16 +33,16 @@ data "template_file" "inventory" {
     db02_hostname              = module.mysql_db02.vm_hostname
     db02_internal_ipv4_address = module.mysql_db02.vm_internal_ipv4_address
 
-    wordpress_hostname = module.app.vm_hostname
+    wordpress_hostname              = module.app.vm_hostname
     wordpress_internal_ipv4_address = module.app.vm_internal_ipv4_address
 
-    monitoring = module.monitoring.vm_hostname
+    monitoring                       = module.monitoring.vm_hostname
     monitoring_internal_ipv4_address = module.monitoring.vm_internal_ipv4_address
 
-    gitlab = module.gitlab.vm_hostname
+    gitlab                       = module.gitlab.vm_hostname
     gitlab_internal_ipv4_address = module.gitlab.vm_internal_ipv4_address
 
-    runner = module.runner.vm_hostname
+    runner                       = module.runner.vm_hostname
     runner_internal_ipv4_address = module.runner.vm_internal_ipv4_address
   }
 }
